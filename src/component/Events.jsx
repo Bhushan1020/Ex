@@ -12,7 +12,7 @@ import event9 from '../images/paperpresentation.jpg';
 import './Events.css';
 
 const Events = () => {
-    const [events, setEvents] = useState([
+    const events = [
         { id: 1, name: 'Robo War', date: '2024-03-15', location: 1, image: event1, description:"Get ready to witness an adrenaline-fueled battle of robots in the ultimate test of strength and strategy! In the Robowar competition, teams will pit their custom-built robots against each other in a thrilling showdown of mechanical mayhem."
         ,fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing',link:"https://forms.gle/YjAVHL78ZHPc2mRR7" },
         { id: 2, name: 'Line Follower Robot', date: '2024-03-20', location: 2, image: event2, description: "Welcome to the Line Follower Robot competition! This exciting event challenges participants to design and build autonomous robots capable of following a predefined path on a track using sensors and programming algorithms.",fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing',link:"https://forms.gle/YjAVHL78ZHPc2mRR7" },
@@ -23,7 +23,7 @@ const Events = () => {
         { id: 7, name: 'Contraption', date: '2024-03-28', location: 8, image: event7, description: "Robo contraption competitions inspire participants to design and build multifaceted robots, blending mechanical, electrical, and programming skills. Teams strategize and innovate to overcome challenges, fostering creativity, problem-solving, and teamwork in a dynamic environment.",fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing' ,link:"https://forms.gle/YjAVHL78ZHPc2mRR7"},
         { id: 8, name: 'Digital Poster Presentation', date: '2024-03-30', location: 7, image: event8, description: "Digital poster competitions entail crafting visually captivating posters using multimedia elements and digital tools. Participants convey ideas, promote concepts, and engage in friendly competition, showcasing their design skills and creativity in a digital format." ,fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing' ,link:"https://forms.gle/YjAVHL78ZHPc2mRR7"},
         { id: 9, name: 'Paper Presentation', date: '2024-03-30', location: 7, image: event9, description: "Paper presentation competitions showcase research or scholarly work through oral presentations summarizing papers. Participants present findings, ideas, or analyses, supported by visual aids, aiming for clarity, originality, and effective communication to peers and judges." ,fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing',link:"https://forms.gle/YjAVHL78ZHPc2mRR7"}
-    ]);
+    ];
 
     const handleDownload = (fileUrl) => {
         window.open(fileUrl, '_blank');
