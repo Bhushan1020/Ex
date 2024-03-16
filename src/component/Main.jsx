@@ -1,21 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useCallback } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import closeIcon from './window.jpg';
 import Image from '../images/main.jpg';
 
 const Main = () => {
   const targetDate = new Date('2024-04-10T23:59:59').getTime();
-  const [remainingTime, setRemainingTime] = useState(calculateTimeRemaining());
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRemainingTime(calculateTimeRemaining());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [calculateTimeRemaining]);
-
-  function calculateTimeRemaining() {
+  const calculateTimeRemaining = useCallback(() => {
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -30,7 +21,17 @@ const Main = () => {
       minutes,
       seconds
     };
-  }
+  }, [targetDate]);
+
+  const [remainingTime, setRemainingTime] = useState(calculateTimeRemaining());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRemainingTime(calculateTimeRemaining());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [calculateTimeRemaining]);
 
   const [showModal, setShowModal] = useState(false);
 
