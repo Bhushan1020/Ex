@@ -9,7 +9,6 @@ import Contact from './component/Contact';
 import AboutUs from './component/AboutUs';
 import FAQ from './component/FAQ';
 import Team from './component/Team';
-import Admin from './component/Admin';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
       <Route path='/aboutus' element={<AboutUs/>}/>
       <Route path='/faq' element={<FAQ/>}/>
       <Route path='/team' element={<Team/>}/>
-      <Route path='/admin' element={<Admin/>}/>
     </Routes>
     <Footer/>
     </div>
