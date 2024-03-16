@@ -28,7 +28,7 @@ const Home = () => {
           <Nav className="mr-auto">
             <h3 className="nav-title" style={{ color: '#fff', marginRight: '20px' }}>Excalibur</h3>
           </Nav>
-          <Nav className="ml-auto" style={{marginLeft:"500px"}}>
+          <Nav className="ml-auto" style={{marginLeft:"200px"}}>
             <Link to='/events' className="nav-link" style={{ color: '#fff', marginRight: '10px',  }} onClick={handleNavPageClick}>Events & Register</Link>
             {/* <Link to='/register' className="nav-link" style={{ color: '#fff', marginRight: '10px' }} onClick={handleNavPageClick}>Register</Link> */}
             <Link to='/contact' className="nav-link" style={{ color: '#fff', marginRight: '10px' }} onClick={handleNavPageClick}>Contact us</Link>
