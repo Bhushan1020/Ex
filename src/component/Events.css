@@ -1,0 +1,52 @@
+.event-item {
+    border: 1px solid #ddd;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    position: relative;
+}
+
+.event-item:hover {
+    animation: flipAnimation 1s ease-in-out forwards;
+}
+
+.event-image {
+    width: 60%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.event-name {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.event-info {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.event-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+@keyframes flipAnimation {
+    0% {
+        transform: scale(1) rotateY(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotateY(180deg);
+    }
+    100% {
+        transform: scale(1) rotateY(360deg);
+    }
+}

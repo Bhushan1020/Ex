@@ -1,0 +1,48 @@
+.navbar-nav .nav-link {
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  margin-right: 20px;
+  font-weight: normal;
+  color: white; 
+}
+
+
+/* Add responsive styles here */
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: blue !important;
+  }
+
+  .nav-title {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+}
+
+
+.nav-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  font-weight: bold;
+  border-top-color: white;
+  border-bottom-color: white;
+  color: blue;
+}
+
+.ml-auto{
+  margin-left: 300px;
+}
+
