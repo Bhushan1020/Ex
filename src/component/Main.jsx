@@ -13,7 +13,7 @@ const Main = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [calculateTimeRemaining]);
 
   function calculateTimeRemaining() {
     const now = new Date().getTime();

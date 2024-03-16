@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
-import Image from '../images/bg.jpg';
 import event1 from '../images/Robowar.jpg';
 import event2 from '../images/Linefollowerrobot.jpg';
 import event3 from '../images/Dronracing.jpg';
