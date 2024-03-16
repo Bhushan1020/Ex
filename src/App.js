@@ -2,7 +2,7 @@ import './App.css';
 import Home from './component/Home';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Main from './component/Main';
-import {Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Route, Routes} from 'react-router-dom';
 import Events from './component/Events';
 import Footer from './component/Footer';
 import Contact from './component/Contact';
