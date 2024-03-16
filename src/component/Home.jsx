@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import collegeLogo from './logo.png';
 import { Link } from 'react-router-dom';
+import './Home.css'
 
 const Home = () => {
   const [expanded, setExpanded] = useState(false);
@@ -28,13 +29,13 @@ const Home = () => {
           <Nav className="mr-auto">
             <h3 className="nav-title" style={{ color: '#fff', marginRight: '20px' }}>Excalibur</h3>
           </Nav>
-          <Nav className="ml-auto" style={{marginLeft:"200px"}}>
-            <Link to='/events' className="nav-link" style={{ color: '#fff', marginRight: '10px',  }} onClick={handleNavPageClick}>Events & Register</Link>
+          <Nav className="ml-auto" style={{marginLeft:"70px"}}>
+            <Link to='/events' className="nav-link" style={{ color: '#fff', marginRight: '40px',  }} onClick={handleNavPageClick}>Events & Register</Link>
             {/* <Link to='/register' className="nav-link" style={{ color: '#fff', marginRight: '10px' }} onClick={handleNavPageClick}>Register</Link> */}
-            <Link to='/contact' className="nav-link" style={{ color: '#fff', marginRight: '10px' }} onClick={handleNavPageClick}>Contact us</Link>
-            <Link to='/aboutus' className="nav-link" style={{ color: '#fff', marginRight: '10px' }} onClick={handleNavPageClick}>About us</Link>
-            <Link to='/team' className="nav-link" style={{ color: '#fff', marginRight: '10px' }} onClick={handleNavPageClick}>Team</Link>
-            <Link to='/faq' className="nav-link" style={{ color: '#fff', marginRight: '10px' }} onClick={handleNavPageClick}>FAQ</Link>
+            <Link to='/contact' className="nav-link" style={{ color: '#fff', marginRight: '40px' }} onClick={handleNavPageClick}>Contact us</Link>
+            <Link to='/aboutus' className="nav-link" style={{ color: '#fff', marginRight: '40px' }} onClick={handleNavPageClick}>About us</Link>
+            <Link to='/team' className="nav-link" style={{ color: '#fff', marginRight: '40px' }} onClick={handleNavPageClick}>Team</Link>
+            <Link to='/faq' className="nav-link" style={{ color: '#fff', marginRight: '40px' }} onClick={handleNavPageClick}>FAQ</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

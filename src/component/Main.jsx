@@ -1,7 +1,9 @@
 import React, { useState, useEffect,useCallback } from 'react';
 import { Button, Modal } from 'react-bootstrap';
-import closeIcon from './window.jpg';
-import Image from '../images/main.jpg';
+import closeIcon from '../images/window.jpg';
+import Image from '../images/bgimg1.jpg';  
+import './Main.css' 
+import Logo from '../images/saarlogo.png'
 
 const Main = () => {
   const targetDate = new Date('2024-04-10T23:59:59').getTime();
@@ -36,7 +38,7 @@ const Main = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleCloseModal = () => {
-    window.location.href = '/events';
+    window.location.href = '/';
   };
 
   return (
@@ -47,9 +49,13 @@ const Main = () => {
           width: '100%',
           height: '700px',
           overflow: 'hidden',
-          backgroundImage: `url(${Image})`
+          backgroundImage: `url(${Image})`,backgroundSize:"contain",backgroundRepeat:"-moz-initial"
         }}
       >
+
+<img src={Logo} alt="Excalibur Logo" style={{ position: 'absolute',marginTop:"35px", top: '20px', left: '50%', transform: 'translateX(-50%)', width: '110px', height: '100px' }} />
+
+
         <div
           style={{
             position: 'absolute',
@@ -60,7 +66,7 @@ const Main = () => {
             color: 'white',
           }}
         >
-          <h1 style={{ fontSize: '3rem', marginTop: "90px", marginBottom: '20px' }}>Welcome to <br />Excalibur</h1>
+          <h1 style={{ fontSize: '3rem', marginTop: "130px", marginBottom: '20px' }}>Welcome to <br />Excalibur</h1>
           <p style={{ fontSize: '1.5rem', marginBottom: '30px' }}>Participate in events and Explore the prizes</p>
           <Button
             className="start-button"
@@ -68,7 +74,7 @@ const Main = () => {
             onClick={() => setShowModal(true)}
             style={{ marginBottom: '100px' }}
           >
-            <h4>Start</h4>
+            <h4>Explore</h4>
           </Button>
           <center><h2 style={{marginBottom:"10px"}}>Register Now</h2></center>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -93,7 +99,7 @@ const Main = () => {
 }
 
 const CountdownBlock = ({ label, value }) => (
-  <div style={{ margin: '0 10px', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '8px', boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)', flex: '1 0 120px' }}>
+  <div style={{ margin:"5px", padding: '5px', backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '8px', boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)', flex: '1 0 120px' }}>
     <p style={{ fontSize: '1.2rem', color: "white", marginBottom: '5px' }}>{label}</p>
     <p style={{ fontSize: '2rem', color: "white", fontWeight: 'bold' }}>{value}</p>
   </div>

@@ -1,48 +1,22 @@
-.navbar-nav .nav-link {
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-  margin-right: 20px;
-  font-weight: normal;
-  color: white; 
+.nav-link {
+  text-decoration: none; /* Remove default underline */
+  color: #fff; /* Set default color */
+  position: relative; /* Position relative for the ::after pseudo-element */
 }
 
-
-/* Add responsive styles here */
-
-@media (max-width: 768px) {
-  .navbar-nav .nav-link {
-    color: #fff !important;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: blue !important;
-  }
-
-  .nav-title {
-    color: #fff;
-    font-size: 1.2rem;
-    margin-right: 0;
-  }
+.nav-link::after {
+  content: ""; /* Add content for the pseudo-element */
+  position: absolute; /* Position absolute to position the line */
+  left: 0; /* Align the line with the text */
+  bottom: -5px; /* Position the line 5px below the text */
+  width: 100%; /* Set width to 100% */
+  height: 2px; /* Set height to create the line */
+  background-color: #fff; /* Set line color */
+  visibility: hidden; /* Initially hide the line */
+  transition: all 0.3s ease; 
+  font-weight: bold;/* Add transition effect */
 }
 
-
-.nav-title {
-  font-size: 1.5rem;
-  color: white;
-  margin-right: 20px;
-  font-weight: bold;
+.nav-link:hover::after {
+  visibility: visible; /* Show the line on hover */
 }
-
-.navbar-nav .nav-link:hover {
-  font-weight: bold;
-  border-top-color: white;
-  border-bottom-color: white;
-  color: blue;
-}
-
-.ml-auto{
-  margin-left: 300px;
-}
-
