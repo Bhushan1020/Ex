@@ -22,6 +22,10 @@ const Events = () => {
         { id: 7, name: 'Contraption', date: '2024-03-28', location: 8, image: event7, description: "Robo contraption competitions inspire participants to design and build multifaceted robots, blending mechanical, electrical, and programming skills. Teams strategize and innovate to overcome challenges, fostering creativity, problem-solving, and teamwork in a dynamic environment.",fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing' ,link:"https://forms.gle/oa5VxhMk9hXC3iUc6"},
         { id: 8, name: 'Digital Poster Presentation', date: '2024-03-30', location: 7, image: event8, description: "Digital poster competitions entail crafting visually captivating posters using multimedia elements and digital tools. Participants convey ideas, promote concepts, and engage in friendly competition, showcasing their design skills and creativity in a digital format." ,fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing' ,link:"https://forms.gle/xSe7HVgzruz6LYbG8"},
         { id: 9, name: 'Paper Presentation', date: '2024-03-30', location: 7, image: event9, description: "Paper presentation competitions showcase research or scholarly work through oral presentations summarizing papers. Participants present findings, ideas, or analyses, supported by visual aids, aiming for clarity, originality, and effective communication to peers and judges." ,fileUrl: 'https://drive.google.com/file/d/1ViCQ2rOhjSIUxkgHQIGxg74pbFpZCk2b/view?usp=sharing',link:"https://forms.gle/Uw4jJnfLU2xczkuU8"}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3af2e207a6b8c6be7809dff67142200af0829da8
     ];
 
     const handleDownload = (fileUrl) => {
